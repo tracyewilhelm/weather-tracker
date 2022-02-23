@@ -9,7 +9,7 @@ var windTodayEl = document.querySelector("#windToday");
 var humidityTodayEl = document.querySelector("#humidityToday");
 var uviTodayEl = document.querySelector("#uviToday");
 
-var iconURL = "http://openweathermap.org/img/wn/";
+var iconURL = "https://openweathermap.org/img/wn/";
 
 //container2 -
 var prevSearchUlEl = document.getElementById("prevSearchList");
@@ -46,7 +46,7 @@ function getWeatherAPI(citySearch) {
     // "http://api.openweathermap.org/data/2.5/weather?q=denver&units=imperial&exclude=minutely&appid=2a1cb33a158e817c9b2231f9a660bba7";
     //request for specific city's data; input the search text into the url to find data
 
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     citySearch +
     "&units=imperial&exclude=minutely&appid=2a1cb33a158e817c9b2231f9a660bba7";
   console.log(requestUrl);
